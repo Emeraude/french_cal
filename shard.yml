@@ -1,0 +1,9 @@
+name: french_cal
+version: 0.1.0
+
+authors:
+  - Arthur Poulet <arthur.poulet@mailoo.org>
+
+crystal: 0.20.5
+
+license: MIT
