@@ -1,16 +1,16 @@
 require "./spec_helper"
 
 include FrenchCal
-A = Time.new(2017, 2, 22)
-B = Time.new(2016, 9, 24)
-C = Time.new(2016, 2, 1)
-D = Time.new(2017, 2, 24)
+A = Time.new(2017, 2, 22) # 4 Ventôse 225
+B = Time.new(2016, 9, 24) # 3 Vendémiaire 225
+C = Time.new(2016, 2, 1) # 12 Pluviôse 224
+D = Time.new(2017, 2, 24) # 6 Ventôse 225
 
-T1  = Time.new(2016, 9, 22)
-T2  = Time.new(2016, 9, 23)
-T3  = Time.new(2016, 9, 24)
-TX5 = Time.new(2017, 9, 21)
-TX6 = Time.new(2017, 9, 22)
+T1  = Time.new(2016, 9, 22) # 1 Vendémiaire 225
+T2  = Time.new(2016, 9, 23) # 2 Vendémiaire 225
+T3  = Time.new(2016, 9, 24) # 3 Vendémiaire 225
+TX5 = Time.new(2017, 9, 21) # Jour des récompenses (5) 225
+TX6 = Time.new(2017, 9, 22) # 1 Vendémiaire 226
 
 # TODO: check the 21, 22, 23
 
