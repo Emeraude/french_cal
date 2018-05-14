@@ -33,7 +33,8 @@ module FrenchCal
 
   module Time
     private def fnow
-      (self - FrenchCal::FIRST_DAY)
+      # TODO: fix the incremental number depending on original date
+      (self - FrenchCal::FIRST_DAY) + 2.day
     end
 
     def is_sextile?
@@ -45,8 +46,7 @@ module FrenchCal
     end
 
     def fyear
-      # TODO: fix the incremental number depending on original date
-      days = fnow.total_days + 2
+      days = fnow.total_days
       quat = days / (DAYS_BY_CLASSIC_YEAR * (SEXTILE_EVERY - 1) + DAYS_BY_SEXTILE_YEAR)
       year = (quat * 4).floor.to_i64 + 1
       year

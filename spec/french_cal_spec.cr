@@ -42,7 +42,8 @@ describe FrenchCal do
     T2.fday.should eq 2
     T3.fday.should eq 3
     TX5.fday.should eq 5
-    TX6.fday.should eq 1
+    TX6.fday.should eq 6
+    TX7.fday.should eq 1
   end
 
   it "fmonth" do
@@ -54,6 +55,7 @@ describe FrenchCal do
     T2.fmonth.should eq 1
     T3.fmonth.should eq 1
     TX5.fmonth.should eq 13
-    TX6.fmonth.should eq 1
+    TX6.fmonth.should eq 13
+    TX7.fmonth.should eq 1
   end
 end
