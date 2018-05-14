@@ -19,11 +19,11 @@ describe FrenchCal do
     A.fyear.should eq 225
     B.fyear.should eq 225
     C.fyear.should eq 224
-    T1.fyear.should eq 224
-    T2.fyear.should eq 224
-    T3.fyear.should eq 224
-    TX5.fyear.should eq 224
-    TX6.fyear.should eq 225
+    T1.fyear.should eq 225
+    T2.fyear.should eq 225
+    T3.fyear.should eq 225
+    TX5.fyear.should eq 225
+    TX6.fyear.should eq 226
   end
 
   it "is_sextile?" do
@@ -39,18 +39,19 @@ describe FrenchCal do
     T1.fday.should eq 1
     T2.fday.should eq 2
     T3.fday.should eq 3
-    TX5.fday.should eq 365
+    TX5.fday.should eq 5
     TX6.fday.should eq 1
   end
 
   it "fmonth" do
     A.fmonth.should eq 6
     B.fmonth.should eq 1
+    C.fmonth.should eq 5
 
     T1.fmonth.should eq 1
     T2.fmonth.should eq 1
     T3.fmonth.should eq 1
     TX5.fmonth.should eq 13
-    TX6.fmonth.should eq 13
+    TX6.fmonth.should eq 1
   end
 end
