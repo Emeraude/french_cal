@@ -10,7 +10,8 @@ T1  = Time.new(2016, 9, 22) # 1 Vendémiaire 225
 T2  = Time.new(2016, 9, 23) # 2 Vendémiaire 225
 T3  = Time.new(2016, 9, 24) # 3 Vendémiaire 225
 TX5 = Time.new(2017, 9, 21) # Jour des récompenses (5) 225
-TX6 = Time.new(2017, 9, 22) # 1 Vendémiaire 226
+TX6 = Time.new(2017, 9, 22) # Jour de la révolution (6) 225
+TX7 = Time.new(2017, 9, 23) # 1 Vendémiaire 226
 
 # TODO: check the 21, 22, 23
 
@@ -23,7 +24,8 @@ describe FrenchCal do
     T2.fyear.should eq 225
     T3.fyear.should eq 225
     TX5.fyear.should eq 225
-    TX6.fyear.should eq 226
+    TX6.fyear.should eq 225
+    TX7.fyear.should eq 226
   end
 
   it "is_sextile?" do
